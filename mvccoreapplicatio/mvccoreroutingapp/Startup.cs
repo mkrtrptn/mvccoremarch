@@ -20,7 +20,7 @@ namespace mvccoreroutingapp
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        //// This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<CookiePolicyOptions>(options =>
@@ -57,7 +57,7 @@ namespace mvccoreroutingapp
 
                 routes.MapRoute(
                     name:"bynameid",
-                    template:"{controller}/{action}/{id}/{name}"
+                    template: "{controller}/{action}/{id}/{name}"
                     );
 
             });
